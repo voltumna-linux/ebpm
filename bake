@@ -1,0 +1,11 @@
+MACHINE="a10socdk"
+nice bitbake -k ebpm-sde || return
+
+# MACHINE="a10socdk"
+# nice bitbake -k ebpm-sre || return
+
+# MACHINE="qemu-armv7at2hf-neon"
+# SDKMACHINE="x86_64"
+# nice bitbake -k ebpm-sdk -c populate_sdk || return
+# SDKMACHINE="x86_64-mingw32"
+# nice bitbake -k ebpm-sdk -c populate_sdk || return
