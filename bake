@@ -1,0 +1,4 @@
+MACHINE="arria10-daq"
+nice bitbake -k ebpm-sre ebpm-sde || return
+SDKMACHINE="x86_64"
+nice bitbake -k ebpm-sdk -c populate_sdk || return
