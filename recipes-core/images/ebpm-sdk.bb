@@ -9,7 +9,7 @@ TOOLCHAIN_HOST_TASK:append = ""
 append_to_osrelease() {
 	cat <<-__EOF__ >> ${IMAGE_ROOTFS}/etc/os-release
 	VARIANT_ID="${BPN}"
-	VARIANT="elettrons Beam Position Monitor (Cross Development)"
+	VARIANT="elettron Beam Position Monitor (Cross Development)"
 	MACHINE="${MACHINE}"
 	__EOF__
 }

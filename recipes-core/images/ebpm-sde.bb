@@ -6,7 +6,7 @@ IMAGE_INSTALL:append = ""
 append_to_osrelease() {
 	cat <<-__EOF__ >> ${IMAGE_ROOTFS}/etc/os-release
 	VARIANT_ID="${BPN}"
-	VARIANT="elettrons Beam Position Monitor (Development)"
+	VARIANT="elettron Beam Position Monitor (Development)"
 	MACHINE="${MACHINE}"
 	__EOF__
 }
