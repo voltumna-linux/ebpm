@@ -6,9 +6,10 @@ trap clean EXIT
 DEPLOYDIR=tmp/deploy
 
 declare -A IMAGES
-IMAGES[arria10-daq]="ebpm-sde public wic wic.bmap
-		ebpm-sre public os.tar wic wic.bmap
-		ebpm-sdk public sh"
+#IMAGES[arria10-daq]="ebpm-sde public wic wic.bmap
+#		ebpm-sre public os.tar wic wic.bmap
+#		ebpm-sdk public sh"
+IMAGES[arria10-daq]="ebpm-sde public wic wic.bmap"
 
 for MACHINE in ${!IMAGES[@]}
 do
